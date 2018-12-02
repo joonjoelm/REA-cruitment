@@ -60,8 +60,7 @@ Create an SSL certificate for the TEST-REA stack. This will be setup against the
 
 ### Uploading the Certificate to AWS
 A certificate is required for the ELB, so that SSL is used encrypt communication to/from TEST-REA stack.
-With the certificate, the .pem file can't contain the same certificate that's in the .cer file.
-Generating from the command line will require you to find the root chain certificate for upload.
+With the certificate, the .pem file can't contain the same certificate that's in the .cer file. Generating from the command line will require you to find the root chain certificate for upload.
 
 Below is the command that need to be run from the build box, assuming that the AWS ClI is available.
 
@@ -93,4 +92,4 @@ To create a log group, follow the below steps:
 1. Open the CloudWatch console at https://console.aws.amazon.com/cloudwatch/.
 2. In the navigation pane, choose Logs.
 3. Choose Actions, Create log group.
-4. Type a name for the log group: `testRea`, and choose Create log group.
+4. Type a name for the log group: `TestRea`, and choose Create log group.
